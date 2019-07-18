@@ -62,6 +62,14 @@ if(chartContainer) {
 
     var channel = pusher.subscribe('os-poll');
     channel.bind('os-vote', function(data) {
-      alert(JSON.stringify(data));
+        dataPoints = dataPoints.map(x => {
+            if(x.label == data.os) {
+                x.y += data.points;
+                return x;
+            } else {
+                return x;
+            }
+        });
+        chart.render();
     });
 }
