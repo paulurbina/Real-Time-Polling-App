@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-
-mongoose.connect('mongodb://pusher:pusher2019@ds353007.mlab.com:53007/app-polling', {
+// adding mongodb altas
+mongoose.connect('mongodb+srv://pusher-polling:pusher-polling@cluster0-nhqvl.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
 })
 .then(db => console.log('>> DB Mlab connected'))

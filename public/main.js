@@ -36,7 +36,8 @@ fetch('http://localhost:3000/polling', {
         //count vote points - acc / current votes
         const voteCounts = votes.reduce(
             (acc, vote) => (
-                 (acc[vote.os] = (acc[vote.os] || 0) + parseInt(vote.points)), acc),
+                    (acc[vote.os] = (acc[vote.os] || 0) + parseInt(vote.points)), acc
+                 ),
                  {}
             );
 

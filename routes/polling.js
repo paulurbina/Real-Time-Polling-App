@@ -1,5 +1,4 @@
 var Pusher = require('pusher');
-const mongoose = require('mongoose');
 const Vote = require('../models/Vote');
 const { Router } = require('express');
 const router = Router();
