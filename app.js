@@ -7,7 +7,7 @@ const app = express();
 app.set('port', 3000 || process.env.PORT());
 
 // connected db
-// require('./config/db');
+require('./config/db');
 
 // Set routes
 const RouterPolling = require('./routes/polling');

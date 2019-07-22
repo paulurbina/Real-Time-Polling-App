@@ -1,6 +1,6 @@
 const form = document.getElementById('vote-form');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {    
 
     const choise = document.querySelector('input[name=os]:checked').value;
     
