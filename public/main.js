@@ -22,12 +22,11 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 });
 // method get
-fetch('http://localhost:3000/polling', {
-    method: 'GET',
-    body: JSON.stringify(data),
-    headers: new Headers({
-        'Content-type': 'application/json'
-    })
+fetch('http://localhost:3000/polling')
+    // body: JSON.stringify(data),
+    // headers: new Headers({
+    //     'Content-type': 'application/json'
+    // })
     .then(res => res.json())
     .then(data => {
         const votes = data.votes;
@@ -93,8 +92,7 @@ fetch('http://localhost:3000/polling', {
             });
         }
     })
-    .catch(e => console.log(e))
-});
+    .catch(e => console.log(e));
 
 
 
