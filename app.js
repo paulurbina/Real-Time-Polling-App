@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 
 // Initialize variable
-const app = express();
+const app = express();  
 app.set('port', 3000 || process.env.PORT());
 
 // connected db
