@@ -5,7 +5,7 @@ const router = Router();
 
 
 // Initialiance pusher
-var pusher = new Pusher({
+var pusher = new Pusher({   
   appId: '822753',
   key: '549c2bdbf09152653457',
   secret: 'dcad4d343bd2fd3a71b4',

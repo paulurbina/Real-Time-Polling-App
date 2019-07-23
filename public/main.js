@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
     // method post
     fetch('http://localhost:3000/polling', {
         method: 'post',
-        body: JSON.stringify(data),
+        body: JSON.stringify(data), 
         headers: new Headers({
             'Content-Type': 'application/json'
         })
@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
 });
 // method get
 fetch('http://localhost:3000/polling', {
-    method: 'get',
+    method: 'GET',
     body: JSON.stringify(data),
     headers: new Headers({
         'Content-type': 'application/json'
