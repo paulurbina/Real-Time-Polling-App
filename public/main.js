@@ -30,7 +30,7 @@ fetch('http://localhost:3000/polling')
     .then(res => res.json())
     .then(data => {
         const votes = data.votes;
-        const totalVotes = votes.lenght;
+        const totalVotes = votes.length;
 
         //count vote points - acc / current votes
         const voteCounts = votes.reduce(
@@ -54,7 +54,7 @@ fetch('http://localhost:3000/polling')
                 animationEnabled: true,
                 theme: 'theme1',
                 title: {
-                    text: `Total Votes ${totalVotes}`, //enl
+                    text: `Total Votes: ${totalVotes}`, //enl
                     fontWeight: "bolder",
                     fontColor: "#008B8B",
                     fontfamily: "tahoma",
